@@ -13,8 +13,8 @@ public class ${activityClass} extends ${(appCompat)?string('ActionBar','')}Activ
         super.onCreate(savedInstanceState);
         setContentView(R.layout.${layoutName});
     }
-
-
+    <#if addSettings>
+    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -33,4 +33,5 @@ public class ${activityClass} extends ${(appCompat)?string('ActionBar','')}Activ
         }
         return super.onOptionsItemSelected(item);
     }
+    </#if>
 }

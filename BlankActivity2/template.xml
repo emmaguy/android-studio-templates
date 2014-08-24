@@ -2,7 +2,7 @@
 <template
     format="3"
     revision="4"
-    name="Blank Activity"
+    name="Blank Activity2"
     minApi="7"
     minBuildApi="14"
     description="Creates a new blank activity with an action bar.">
@@ -58,6 +58,21 @@
         type="string"
         constraints="package"
         default="com.mycompany.myapp" />
+        
+        
+    <parameter
+        id="addSettings"
+        name="Add Settings"
+        type="boolean"
+        default="true"
+        help="If true, this activity will have a default Settings implementation" />
+        
+    <parameter
+        id="addHelloWorld"
+        name="Add 'Hello World'"
+        type="boolean"
+        default="true"
+        help="If true, this activity will include the string 'Hello World', and a TextView using it in its layout" />
 
     <!-- 128x128 thumbnails relative to template.xml -->
     <thumbs>

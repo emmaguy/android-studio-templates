@@ -2,8 +2,12 @@
     <#if !isNewProject>
     <string name="title_${activityToLayout(activityClass)}">${escapeXmlString(activityTitle)}</string>
     </#if>
-
+    
+    <#if addHelloWorld>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    </#if>
 
+    <#if addSettings>
+    <string name="action_settings">Settings</string>
+    </#if>
 </resources>
