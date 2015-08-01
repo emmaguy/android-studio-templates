@@ -15,7 +15,6 @@ public class ${activityClass} extends ${superClass} {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.${layoutName});
     }
-
 <#if addMenu>
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

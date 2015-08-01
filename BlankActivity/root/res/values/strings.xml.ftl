@@ -3,11 +3,11 @@
     <string name="title_${activityToLayout(activityClass)}">${escapeXmlString(activityTitle)}</string>
     </#if>
 
-    <#if addHelloWorld>
+	<#if addHelloWorld>
     <string name="hello_world">Hello world!</string>
-	</#if>
-	
-	<#if addMenu>
+    </#if>
+
+    <#if addMenu>
     <string name="action_settings">Settings</string>
     </#if>
 
