@@ -1,16 +1,14 @@
 <?xml version="1.0"?>
 <recipe>
 
-    <#if appCompat><dependency mavenUrl="com.android.support:appcompat-v7:${targetApi}.+"/></#if>
-
     <merge from="AndroidManifest.xml.ftl"
              to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml" />
 
-    <#if addSettings>
-    <instantiate from="res/menu/main.xml.ftl"
-            to="${escapeXmlAttribute(resOut)}/menu/${menuName}.xml" />
+    <#if addMenu>
+        <instantiate from="res/menu/main.xml.ftl"
+                     to="${escapeXmlAttribute(resOut)}/menu/${menuName}.xml" />
     </#if>
-    
+
     <merge from="res/values/strings.xml.ftl"
              to="${escapeXmlAttribute(resOut)}/values/strings.xml" />
 
